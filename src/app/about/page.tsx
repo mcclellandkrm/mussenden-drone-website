@@ -119,7 +119,7 @@ export default function AboutPage() {
                 What started as a small research project in a garage has evolved into a leading force in the drone industry, serving customers across multiple sectors with innovative solutions that combine cutting-edge technology with practical reliability.
               </p>
               <p className="text-gray-300 text-lg leading-relaxed">
-                Today, we continue to push the boundaries of what's possible in aerial technology, developing next-generation drones that are smarter, safer, and more capable than ever before.
+                Today, we continue to push the boundaries of what&apos;s possible in aerial technology, developing next-generation drones that are smarter, safer, and more capable than ever before.
               </p>
             </div>
             <div className="bg-gray-800 h-96 rounded-xl flex items-center justify-center">
@@ -181,7 +181,7 @@ export default function AboutPage() {
               Meet Our Team
             </h2>
             <p className="text-gray-300 text-lg max-w-3xl mx-auto">
-              The brilliant minds behind Mussenden Drone & Aerial's innovative technology and exceptional service.
+              The brilliant minds behind Mussenden Drone & Aerial&apos;s innovative technology and exceptional service.
             </p>
           </div>
           
@@ -242,8 +242,8 @@ export default function AboutPage() {
             Join Our Mission
           </h2>
           <p className="text-gray-300 text-lg max-w-3xl mx-auto mb-8">
-            Whether you're looking for cutting-edge drone technology or want to be part of our innovative team, 
-            we'd love to hear from you.
+            Whether you&apos;re looking for cutting-edge drone technology or want to be part of our innovative team, 
+            we&apos;d love to hear from you.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
