@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 
+// Updated hero section with drone background
 export default function ParallaxHero() {
   return (
     <div className="relative h-screen overflow-hidden bg-black">
