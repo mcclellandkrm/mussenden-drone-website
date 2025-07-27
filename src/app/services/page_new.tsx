@@ -141,7 +141,7 @@ export default function ServicesPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-6">Ready to Get Started?</h2>
           <p className="text-xl text-blue-100 mb-8">
-            Contact us today for a free consultation and quote. Let's discuss how our drone services can help you.
+            Contact us today for a free consultation and quote. Let&apos;s discuss how our drone services can help you.
           </p>
           <a 
             href="/contact" 

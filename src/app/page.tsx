@@ -39,7 +39,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h2 className="text-4xl font-bold text-white mb-6">Ready to Elevate Your Perspective?</h2>
           <p className="text-xl text-blue-100 mb-8">
-            Contact us today for a free consultation and quote. Let's discuss how our advanced drone services can transform your project.
+            Contact us today for a free consultation and quote. Let&apos;s discuss how our advanced drone services can transform your project.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 

@@ -230,7 +230,7 @@ export default function ScrollStats() {
               ))}
             </div>
             <blockquote className="text-xl text-gray-300 italic mb-4">
-              "Mussenden Aerial exceeded all our expectations. Their professionalism and attention to detail is unmatched in the industry."
+              &quot;Mussenden Aerial exceeded all our expectations. Their professionalism and attention to detail is unmatched in the industry.&quot;
             </blockquote>
             <p className="text-gray-400">- Michael Thompson, Property Developer</p>
           </div>
