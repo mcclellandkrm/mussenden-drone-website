@@ -46,7 +46,7 @@ export default function Header() {
                 </svg>
               </div>
               <span className="text-xl font-bold text-white">
-                Mussenden<span className="text-blue-400">.co.uk</span>
+                Mussenden<span className="text-blue-400"> Aerial</span>
               </span>
             </Link>
           </motion.div>

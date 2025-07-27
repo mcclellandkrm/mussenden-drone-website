@@ -10,9 +10,7 @@ interface NavigationProps {
 
 const navigationItems = [
   { label: 'Home', href: '/' },
-  { label: 'Drones', href: '/drones' },
   { label: 'Services', href: '/services' },
-  { label: 'Technology', href: '/technology' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' }
 ];

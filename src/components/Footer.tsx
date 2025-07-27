@@ -8,39 +8,30 @@ export default function Footer() {
 
   const footerSections = [
     {
-      title: 'Products',
-      links: [
-        { label: 'Professional Drones', href: '/drones/professional' },
-        { label: 'Consumer Drones', href: '/drones/consumer' },
-        { label: 'Industrial Solutions', href: '/drones/industrial' },
-        { label: 'Accessories', href: '/accessories' },
-      ],
-    },
-    {
       title: 'Services',
       links: [
-        { label: 'Aerial Photography', href: '/services/photography' },
-        { label: 'Mapping & Surveying', href: '/services/mapping' },
-        { label: 'Inspections', href: '/services/inspections' },
-        { label: 'Training', href: '/services/training' },
+        { label: 'Property Inspections', href: '/services' },
+        { label: 'Aerial Photography', href: '/services' },
+        { label: 'Construction Monitoring', href: '/services' },
+        { label: 'Get Quote', href: '/contact' },
       ],
     },
     {
-      title: 'Support',
+      title: 'Quick Links',
       links: [
-        { label: 'Documentation', href: '/docs' },
-        { label: 'Tutorials', href: '/tutorials' },
-        { label: 'Community', href: '/community' },
-        { label: 'Contact Support', href: '/support' },
-      ],
-    },
-    {
-      title: 'Company',
-      links: [
+        { label: 'Home', href: '/' },
         { label: 'About Us', href: '/about' },
-        { label: 'Careers', href: '/careers' },
-        { label: 'Press', href: '/press' },
-        { label: 'Privacy Policy', href: '/privacy' },
+        { label: 'Services', href: '/services' },
+        { label: 'Contact', href: '/contact' },
+      ],
+    },
+    {
+      title: 'Contact',
+      links: [
+        { label: '+44 7960 044 486', href: 'tel:+447960044486' },
+        { label: 'info@mussenden.co.uk', href: 'mailto:info@mussenden.co.uk' },
+        { label: 'Mount Vernon House, Belfast', href: '/contact' },
+        { label: 'Get Free Quote', href: '/contact' },
       ],
     },
   ];
@@ -132,17 +123,14 @@ export default function Footer() {
           className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
         >
           <p className="text-gray-400 text-sm">
-            © {currentYear} Mussenden.co.uk. All rights reserved.
+            © {currentYear} Mussenden Aerial & Drone. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link href="/terms" className="text-gray-400 hover:text-white transition-colors duration-300 text-sm">
-              Terms of Service
-            </Link>
             <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors duration-300 text-sm">
               Privacy Policy
             </Link>
-            <Link href="/cookies" className="text-gray-400 hover:text-white transition-colors duration-300 text-sm">
-              Cookie Policy
+            <Link href="/terms" className="text-gray-400 hover:text-white transition-colors duration-300 text-sm">
+              Terms of Service
             </Link>
           </div>
         </motion.div>

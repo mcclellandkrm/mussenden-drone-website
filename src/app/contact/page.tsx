@@ -5,47 +5,29 @@ export default function ContactPage() {
     {
       title: 'General Inquiries',
       email: 'info@mussenden.co.uk',
-      phone: '+44 (0) 7960 044 486',
-      description: 'For general questions about our products and services.'
+      phone: '+44 7960 044 486',
+      description: 'For general questions about our drone services and inspections.'
     },
     {
-      title: 'Sales',
-      email: 'sales@mussenden.co.uk',
-      phone: '+44 (0) 7960 044 486',
-      description: 'Ready to purchase or need a custom quote?'
+      title: 'Service Booking',
+      email: 'info@mussenden.co.uk',
+      phone: '+44 7960 044 486',
+      description: 'Ready to book an inspection or aerial photography service?'
     },
     {
-      title: 'Technical Support',
-      email: 'support@mussenden.co.uk',
-      phone: '+44 (0) 7960 044 486',
-      description: '24/7 technical assistance for existing customers.'
-    },
-    {
-      title: 'Media & Press',
-      email: 'press@mussenden.co.uk',
-      phone: '+44 (0) 7960 044 486',
-      description: 'Media inquiries and press-related questions.'
+      title: 'Emergency Services',
+      email: 'info@mussenden.co.uk',
+      phone: '+44 7960 044 486',
+      description: 'Urgent property inspection needs and emergency services.'
     }
   ];
 
   const offices = [
     {
-      location: 'Northern Ireland covering the island of Ireland',
-      address: 'Mount Vernon Hs, Second Floor, Belfast, BT154BA',
-      phone: '+44 (0) 7960 044 486',
+      location: 'Belfast, Northern Ireland',
+      address: 'Mount Vernon House, Second Floor, Belfast, BT15 4BA',
+      phone: '+44 7960 044 486',
       type: 'Headquarters'
-    },
-    {
-      location: 'Limavady, Northern Ireland',
-      address: 'Mussenden Road, Limavady, BT49 0NG',
-      phone: '+44 (0) 7960 044 486',
-      type: 'North Coast Office'
-    },
-    {
-      location: 'Dublin, Ireland',
-      address: '',
-      phone: '+44 (0) 7960 044 486',
-      type: 'ROI Locations'
     }
   ];
 
@@ -56,7 +38,7 @@ export default function ContactPage() {
       <PageHeader
         subtitle="Get in Touch"
         title="Contact Us"
-        description="Ready to take flight with Mussenden Drone & Aerial? We're here to help with all your aerial needs."
+        description="Ready to get started with professional drone services? We're here to help with all your aerial inspection and photography needs."
       />
 
       {/* Contact Form Section */}
@@ -204,31 +186,29 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Our Locations
+              Our Location
             </h2>
             <p className="text-gray-300 text-lg max-w-3xl mx-auto">
-              Visit us at one of our offices across the United States.
+              Based in Belfast, serving all of Northern Ireland and beyond.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {offices.map((office, index) => (
-              <div key={index} className="bg-gray-800 p-6 rounded-xl border border-gray-700 text-center">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg mx-auto mb-4 flex items-center justify-center">
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <span className="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full mb-3">
-                  {office.type}
-                </span>
-                <h3 className="text-xl font-semibold text-white mb-2">{office.location}</h3>
-                <p className="text-gray-300 text-sm mb-3">{office.address}</p>
-                <a href={`tel:${office.phone}`} className="text-blue-400 hover:text-blue-300 transition-colors">
-                  {office.phone}
-                </a>
+          <div className="flex justify-center">
+            <div className="bg-gray-800 p-6 rounded-xl border border-gray-700 text-center max-w-md w-full">
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                </svg>
               </div>
-            ))}
+              <span className="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full mb-3">
+                {offices[0].type}
+              </span>
+              <h3 className="text-xl font-semibold text-white mb-2">{offices[0].location}</h3>
+              <p className="text-gray-300 text-sm mb-3">{offices[0].address}</p>
+              <a href={`tel:${offices[0].phone.replace(/\s/g, '')}`} className="text-blue-400 hover:text-blue-300 transition-colors">
+                {offices[0].phone}
+              </a>
+            </div>
           </div>
         </div>
       </section>

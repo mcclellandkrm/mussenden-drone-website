@@ -8,6 +8,8 @@ interface HeroSectionProps {
   description: string;
   ctaText?: string;
   ctaLink?: string;
+  secondaryCtaText?: string;
+  secondaryCtaLink?: string;
   backgroundVideo?: string;
   className?: string;
 }
@@ -18,6 +20,8 @@ export default function HeroSection({
   description,
   ctaText = 'Get Started',
   ctaLink = '/contact',
+  secondaryCtaText,
+  secondaryCtaLink,
   backgroundVideo,
   className = '',
 }: HeroSectionProps) {
@@ -118,14 +122,16 @@ export default function HeroSection({
           >
             {ctaText}
           </motion.a>
-          <motion.a
-            href="/demo"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-black transition-all duration-300"
-          >
-            Watch Demo
-          </motion.a>
+          {secondaryCtaText && secondaryCtaLink && (
+            <motion.a
+              href={secondaryCtaLink}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-black transition-all duration-300"
+            >
+              {secondaryCtaText}
+            </motion.a>
+          )}
         </motion.div>
       </div>
 
