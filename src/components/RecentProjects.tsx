@@ -41,10 +41,10 @@ export default function RecentProjects() {
               viewport={{ once: true }}
               className="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              {/* Using img tag instead of background image */}
+              {/* Testing with working hero image */}
               <div className="h-64 relative overflow-hidden">
                 <img 
-                  src={index === 0 ? "/home-roof.png" : "/garden-center.png"}
+                  src="/drone-hero.png"
                   alt={project.title}
                   className="w-full h-full object-cover"
                 />
