@@ -5,7 +5,7 @@ export { default as HeroSection } from './HeroSection';
 export { default as Footer } from './Footer';
 export { default as PageHeader } from './PageHeader';
 export { default as Card } from './Card';
-export { default as RecentProjects } from './HorizontalScroll';
+export { default as RecentProjects } from './RecentProjects';
 export { default as ParallaxHero } from './ParallaxHero';
 export { default as InteractiveServices } from './InteractiveServices';
 export { default as ScrollStats } from './ScrollStats';

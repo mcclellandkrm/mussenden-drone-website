@@ -5,24 +5,16 @@ import { motion } from 'framer-motion';
 export default function StatsSection() {
   const stats = [
     {
-      value: '4K',
-      label: 'Photo Resolution',
-      description: 'Ultra-high resolution imaging'
+      value: 'Hi-resolution photography for video and stills'
     },
     {
-      value: '500+',
-      label: 'Projects Completed',
-      description: 'Successful inspections delivered'
+      value: 'Fully insured and experiences'
     },
     {
-      value: '5+',
-      label: 'Years Experience',
-      description: 'Professional drone operations'
+      value: 'Using latest editing software'
     },
     {
-      value: '24/7',
-      label: 'Support Available',
-      description: 'Emergency response ready'
+      value: 'Emergency callout available'
     }
   ];
 
@@ -41,24 +33,18 @@ export default function StatsSection() {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {stats.map((stat, index) => (
             <motion.div
-              key={stat.label}
+              key={index}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
               className="text-center"
             >
-              <div className="text-4xl md:text-5xl font-bold text-white mb-2">
+              <div className="text-xl md:text-2xl font-semibold text-white">
                 {stat.value}
-              </div>
-              <div className="text-lg font-semibold text-gray-300 mb-1">
-                {stat.label}
-              </div>
-              <div className="text-sm text-gray-400">
-                {stat.description}
               </div>
             </motion.div>
           ))}

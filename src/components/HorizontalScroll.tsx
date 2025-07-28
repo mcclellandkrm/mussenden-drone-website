@@ -14,13 +14,13 @@ const projects: Project[] = [
     id: 1,
     title: "Home owner roof and drainage assessment",
     description: "Following a storm we were able to work with the home owner to quickly assess damage to roof tiles and structural integrity",
-    image: "/projects/home-roof.jpg"
+    image: "/projects/home-roof.png"
   },
   {
     id: 2,
     title: "Commercial assessment for planning and layout",
     description: "Following final construction of xyz garden center we were able to work with the developer to implement a much better solution for the layout of the area which helped with customer interaction and flow.",
-    image: "/projects/garden-center.jpg"
+    image: "/projects/garden-center.png"
   }
 ];
 
@@ -48,8 +48,13 @@ export default function RecentProjects() {
               viewport={{ once: true }}
               className="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              {/* Placeholder Image */}
-              <div className="h-64 bg-gradient-to-r from-blue-500 to-cyan-500 relative">
+              {/* Background Image */}
+              <div className="h-64 relative overflow-hidden">
+                <img 
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
                   <span className="text-white text-lg font-medium">
                     {index === 0 ? "Aerial photo of a private home roof" : "Aerial photo of a garden center"}
